@@ -56,6 +56,18 @@ p{
     border: none;
     border-radius: 5px;
 }
+#left{
+    animation-duration: 2s;
+    animation-name:text;
+}
+@kryframes text{
+    0%{
+     opacity:0%;
+    };
+    100%{
+     opacity:100%;
+    }
+}
 @media(max-width:768px){
     #logo{
         position: fixed;
