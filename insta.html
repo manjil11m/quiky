@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Instagram Mockup</title> 
+    <link rel="stylesheet" href="insta.css"> 
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head> 
+<body> 
+    <header>
+        <a href="#home" >
+           <img src="quiky(text).png" alt="quiky-logo" id="logo-text">
+        </a>
+        <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+            </svg>
+        </a>
+    </header>
+    <div class="controls"> 
+        <label> 
+            <input type="checkbox" id="darkModeToggle"> Dark Mode 
+        </label> 
+        <label> 
+            <input type="checkbox" id="verifiedToggle" checked> Show Verified Badge 
+        </label> 
+        <p class="instruction">Click any text or image placeholder (light blue) to edit.</p> 
+    </div> 
+    <input type="file" id="imageUploader" accept="image/*" style="display: none;"> 
+    <div class="app-wrapper">   
+        <div class="mockup-phone"> 
+            <div class="header"> 
+                <i class="fa-solid fa-chevron-left"></i> 
+                <div class="username-header"> 
+                    <span contenteditable="true" data-sync="brandname" class="editable-text">yourbrandname</span> 
+                    <svg class="verified-badge" viewBox="0 0 24 24"><path fill="#0095f6" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/></svg> 
+                </div> 
+                <i class="fa-solid fa-ellipsis"></i> 
+            </div> 
+            <div class="profile-info"> 
+                <div class="profile-pic editable-image placeholder-bg" data-sync="profilepic"></div> 
+                <div class="stats"> 
+                    <div class="stat-box"> 
+                        <strong contenteditable="true" data-sync="postcount" class="editable-text">212</strong> 
+                        <span>Posts</span> 
+                    </div> 
+                    <div class="stat-box"> 
+                        <strong contenteditable="true" data-sync="followers" class="editable-text">14.2K</strong> 
+                        <span>Followers</span> 
+                    </div> 
+                    <div class="stat-box"> 
+                        <strong contenteditable="true" data-sync="following" class="editable-text">88</strong> 
+                        <span>Following</span> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="bio"> 
+                <strong contenteditable="true" data-sync="brandtitle" class="editable-text">Your Brand Name</strong> 
+                <div contenteditable="true" data-sync="biodesc" class="editable-text bio-text">👋A short bio to describe your brand<br>Emojis are supported</div> 
+                <a href="#" contenteditable="true" data-sync="biolink" class="editable-text bio-link"><i class="fa-solid fa-link"></i> yourbrandwebsite.com</a> 
+            </div> 
+            <div class="action-buttons"> 
+                <button class="btn-primary">Follow</button> 
+                <button class="btn-secondary">Message</button> 
+                <button class="btn-secondary icon-btn"><i class="fa-solid fa-user-plus"></i></button> 
+            </div> 
+            <div class="highlights"> 
+                <div class="highlight-item"> 
+                    <div class="highlight-ring"><div class="highlight-img editable-image placeholder-bg" data-sync="hl1"></div></div> 
+                    <span contenteditable="true" class="editable-text">Highlight</span> 
+                </div> 
+                <div class="highlight-item"> 
+                    <div class="highlight-ring"><div class="highlight-img editable-image placeholder-bg" data-sync="hl2"></div></div> 
+                    <span contenteditable="true" class="editable-text">Highlight</span> 
+                </div> 
+                <div class="highlight-item"> 
+                    <div class="highlight-ring"><div class="highlight-img editable-image placeholder-bg" data-sync="hl3"></div></div> 
+                    <span contenteditable="true" class="editable-text">Highlight</span> 
+                </div> 
+                <div class="highlight-item"> 
+                    <div class="highlight-ring"><div class="highlight-img editable-image placeholder-bg" data-sync="hl4"></div></div> 
+                    <span contenteditable="true" class="editable-text">Highlight</span> 
+                </div> 
+            </div> 
+            <div class="tabs"> 
+                <div class="tab active"><i class="fa-solid fa-table-cells"></i></div> 
+                <div class="tab"><i class="fa-solid fa-clapperboard"></i></div> 
+                <div class="tab"><i class="fa-regular fa-address-book"></i></div> 
+            </div> 
+            <div class="photo-grid"> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post1"><i 
+class="fa-solid fa-thumbtack pin-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post2"><i 
+class="fa-solid fa-clone multi-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post3"><i 
+class="fa-solid fa-clapperboard reel-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post4"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post5"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post6"></div> 
+            </div> 
+            <div class="bottom-nav"> 
+                <i class="fa-solid fa-house"></i> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <i class="fa-regular fa-square-plus"></i> 
+                <i class="fa-solid fa-clapperboard"></i> 
+                <div class="nav-profile editable-image placeholder-bg" 
+data-sync="profilepic"></div> 
+            </div> 
+        </div> 
+        <div class="mockup-phone"> 
+            <div class="header"> 
+                <i class="fa-solid fa-chevron-left"></i> 
+                <div class="username-header"> 
+                    <span contenteditable="true" data-sync="brandname" 
+class="editable-text">yourbrandname</span> 
+                    <svg class="verified-badge" viewBox="0 0 24 24"><path fill="#0095f6" d="M12 
+2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 
+2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/></svg> 
+                </div> 
+                <i class="fa-solid fa-ellipsis"></i> 
+            </div> 
+            <div class="post-header"> 
+                <div class="post-header-left"> 
+                    <div class="small-profile-pic editable-image placeholder-bg" 
+data-sync="profilepic"></div> 
+                    <span contenteditable="true" data-sync="brandname" class="editable-text 
+font-bold">yourbrandname</span> 
+                    <svg class="verified-badge" viewBox="0 0 24 24">
+                        <path fill="#0095f6" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/>
+                    </svg> 
+                </div> 
+                <i class="fa-solid fa-ellipsis"></i> 
+            </div> 
+            <div class="main-post-img editable-image placeholder-bg" data-sync="single_post_main"></div> 
+            <div class="post-actions"> 
+                <div class="action-left"> 
+                    <i class="fa-regular fa-heart"></i> 
+                    <i class="fa-regular fa-comment"></i> 
+                    <i class="fa-regular fa-paper-plane"></i> 
+                </div> 
+                <div class="action-right"> 
+                    <i class="fa-regular fa-bookmark"></i> 
+                </div> 
+            </div> 
+            <div class="post-details"> 
+                <div class="likes">Liked by <strong contenteditable="true" 
+class="editable-text">userhandle</strong> and <strong contenteditable="true" 
+class="editable-text">others</strong></div> 
+                <div class="caption"> 
+                    <strong contenteditable="true" data-sync="brandname" class="editable-text">yourbrandname</strong>  
+                    <span contenteditable="true" class="editable-text">A short caption to add personality to your post. Emojis are supported ��</span> 
+                </div> 
+                <div class="comments-link">View all <span contenteditable="true" 
+class="editable-text">12</span> comments</div> 
+            </div> 
+            <div class="bottom-nav"> 
+                <i class="fa-solid fa-house"></i> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <i class="fa-regular fa-square-plus"></i> 
+                <i class="fa-solid fa-clapperboard"></i> 
+                <div class="nav-profile editable-image placeholder-bg" 
+data-sync="profilepic"></div> 
+            </div> 
+        </div> 
+        <div class="mockup-phone story-view editable-image placeholder-bg" 
+data-sync="storybg"> 
+            <div class="story-overlay"> 
+                <div class="story-progress"> 
+                    <div class="progress-bar"></div> 
+                </div> 
+                <div class="story-header"> 
+                    <div class="story-header-left"> 
+                        <div class="small-profile-pic editable-image placeholder-bg" 
+data-sync="profilepic"></div> 
+                        <span contenteditable="true" data-sync="brandname" class="editable-text 
+text-shadow">yourbrandname</span> 
+                        <span class="story-time text-shadow" contenteditable="true">4h</span> 
+                    </div> 
+                    <div class="story-header-right"> 
+                        <i class="fa-solid fa-ellipsis text-shadow"></i> 
+                        <i class="fa-solid fa-xmark text-shadow"></i> 
+                    </div> 
+                </div> 
+            </div> 
+             
+            <div class="story-footer"> 
+                <div class="message-box" contenteditable="true">Send message</div> 
+                <i class="fa-regular fa-heart"></i> 
+                <i class="fa-regular fa-paper-plane"></i> 
+            </div> 
+        </div> 
+ 
+        <div class="mockup-phone"> 
+            <div class="header"> 
+                <i class="fa-solid fa-chevron-left"></i> 
+                <div class="username-header"> 
+                    <span contenteditable="true" data-sync="brandname" 
+class="editable-text">yourbrandname</span> 
+                    <svg class="verified-badge" viewBox="0 0 24 24"><path fill="#0095f6" d="M12 
+2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 
+2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/></svg> 
+                </div> 
+                <span class="header-action-text font-bold text-blue">Follow</span> 
+            </div> 
+ 
+            <div class="tabs"> 
+                <div class="tab active"><i class="fa-solid fa-table-cells"></i></div> 
+                <div class="tab"><i class="fa-solid fa-clapperboard"></i></div> 
+                <div class="tab"><i class="fa-regular fa-address-book"></i></div> 
+            </div> 
+ 
+            <div class="photo-grid"> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post1"><i 
+class="fa-solid fa-thumbtack pin-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post2"><i 
+class="fa-solid fa-clone multi-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post3"><i 
+class="fa-solid fa-clapperboard reel-icon"></i></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post4"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post5"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post6"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post7"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post8"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post9"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post10"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post11"></div> 
+                <div class="grid-item editable-image placeholder-bg" data-sync="post12"></div> 
+            </div> 
+ 
+            <div class="bottom-nav"> 
+                <i class="fa-solid fa-house"></i> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <i class="fa-regular fa-square-plus"></i> 
+                <i class="fa-solid fa-clapperboard"></i> 
+                <div class="nav-profile editable-image placeholder-bg" 
+data-sync="profilepic"></div> 
+            </div> 
+        </div> 
+ 
+    </div> 
+ 
+    <script src="insta.js"></script> 
+</body> 
+</html> 
+ 

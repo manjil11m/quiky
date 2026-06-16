@@ -1,0 +1,117 @@
+body{
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1a1d20;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+    box-sizing: border-box;
+}
+svg{
+    width: 3vw;
+    height: 3vw;
+    color: #0052cc;
+    cursor: pointer;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+#home{
+    position: fixed;
+    height: 100vw;
+}
+#logo-text{
+    margin: 5vw 0;
+}
+#next{
+    width: 5vw;
+    height: 5vw;
+    background-color: #1a1d20; 
+    color: white;             
+    border: none;            
+    font-size: 2vw; 
+    font-weight: bolder;         
+    cursor: pointer;          
+    margin-top: 2vw;
+}
+ #next:hover{
+    font-size: 5vw;
+}
+#create{
+    margin-top: 2vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+@media(max-width:768px){
+    #logo{
+        position: fixed;
+        width: 100vw;
+        top: 14vh;
+        margin-left: 1vw;
+        padding: 10vw;
+        box-sizing: border-box;
+    }
+    svg{
+        width: 10vw;
+        height: 10vw;
+    }
+    #left{
+        position: fixed;
+        bottom: 3vh;
+        margin-left: 3vh;
+        color: white;
+    }
+    #logo-text{
+        width: 40vw;
+    }
+    #next{
+        width: 20vw;
+        height: 20vw;
+        font-size: x-large;
+    }
+    #next:hover{
+        font-size: xx-large;
+    }
+    #create{
+        padding: 5vw;
+    }
+}
+@media(min-width:769px){
+    #logo-text{
+        width: 20vw;
+        margin: 0;
+    }
+    #logo{
+        position: fixed;
+        width: 40vw;
+        top: 20vh;
+        right: 10vw;
+        margin-left: -1vw;
+        padding: 5vw;
+        box-sizing: border-box;
+    }
+    #left{
+        position: fixed;
+        bottom: 25vh;
+        margin-left: 20vh;
+        width: 40vw;
+        color: white;
+    }
+    h1{
+        font-size: 3vw;
+    }
+}

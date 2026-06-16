@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Mockup</title>
+    <link rel="stylesheet" href="fb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#home" >
+           <img src="quiky(text).png" alt="quiky-logo" id="logo-text">
+        </a>
+        <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+            </svg>
+        </a>
+    </header>
+    <div class="controls">
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
+        <button id="toggleVerified"><i class="fas fa-check-circle"></i> Toggle Verified Badge</button>
+        <p class="instruction">Click any text or image placeholder (light blue) to edit.</p>
+    </div>
+    <input type="file" id="imageUploader" accept="image/*" style="display: none;">
+    <div class="screens-container">
+        <div class="screen">
+            <div class="header">
+                <i class="fas fa-chevron-left"></i>
+                <span contenteditable="true" class="sync-username fw-bold">username</span>
+                <i class="fas fa-search"></i>
+            </div>
+            <img src="" class="cover-photo editable-img sync-cover" alt="">
+            <div class="profile-section">
+                <img src="" class="profile-pic editable-img sync-pfp" alt="">
+                <div class="profile-info">
+                    <h2 class="username-title">
+                        <span contenteditable="true" class="sync-username">username</span>
+                        <i class="fas fa-check-circle verified-badge"></i>
+                    </h2>
+                    <p class="stats"><span contenteditable="true">35.8K</span> friends</p>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary"><i class="fas fa-plus"></i> Add to story</button>
+                        <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit profile</button>
+                        <button class="btn btn-secondary px-2"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <span class="active">Posts</span><span>About</span><span>Photos</span><span>Reels</span>
+                </div>
+                <div class="details">
+                    <h4>Details</h4>
+                    <p contenteditable="true" class="bio-text">See your About info</p>
+                    <button class="btn btn-block btn-light text-blue mt-1">Edit public details</button>
+                </div>
+                <div class="friends-header">
+                    <div>
+                        <h4 class="mb-0">Friends</h4>
+                        <p class="stats mt-0"><span contenteditable="true">35,899</span> friends</p>
+                    </div>
+                    <a href="#" class="text-blue">Find friends</a>
+                </div>
+                <div class="photo-grid">
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="header">
+                <i class="fas fa-chevron-left"></i>
+                <span contenteditable="true" class="sync-username fw-bold">username</span>
+                <i class="fas fa-search"></i>
+            </div>
+            <img src="" class="cover-photo editable-img sync-cover" alt="">
+            <div class="profile-section">
+                <img src="" class="profile-pic editable-img sync-pfp" alt="">
+                <div class="profile-info">
+                    <h2 class="username-title">
+                        <span contenteditable="true" class="sync-username">username</span>
+                        <i class="fas fa-check-circle verified-badge"></i>
+                    </h2>
+                    <p class="stats"><span contenteditable="true">35.8K</span> friends</p>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Add friend</button>
+                        <button class="btn btn-secondary"><i class="fab fa-facebook-messenger"></i> Message</button>
+                        <button class="btn btn-secondary px-2"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <span>Posts</span><span>About</span><span>Photos</span><span class="active">Reels</span>
+                </div>
+                <div class="photo-grid" style="margin-top: 15px;">
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                    <div class="grid-item editable-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="top-nav">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-search"></i>
+                <i class="fab fa-facebook-messenger"></i>
+            </div>
+            <div class="main-nav">
+                <i class="fas fa-home active-icon"></i>
+                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-store"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                    <div class="post-info">
+                        <span class="post-author">
+                            <span contenteditable="true" class="sync-username">username</span> 
+                            <i class="fas fa-check-circle verified-badge"></i> 
+                            <span class="follow-text text-blue" contenteditable="true">Follow</span>
+                        </span>
+                        <span class="post-time" contenteditable="true">2h • <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="" class="post-image editable-img" alt="">
+                <div class="post-stats">
+                    <span><i class="fas fa-thumbs-up text-blue"></i> <i class="fas fa-heart text-danger"></i> <span contenteditable="true">99K</span></span>
+                    <span contenteditable="true">250 comments • 289 shares • 5.8K views</span>
+                </div>
+                <div class="post-actions">
+                    <button><i class="far fa-thumbs-up"></i> Like</button>
+                    <button><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="top-nav">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-search"></i>
+                <i class="fab fa-facebook-messenger"></i>
+            </div>
+            <div class="main-nav">
+                <i class="fas fa-home active-icon"></i>
+                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-store"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="create-post">
+                <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                <input type="text" placeholder="What's on your mind?" readonly>
+                <i class="fas fa-images text-success"></i>
+            </div>
+            <div class="stories-container">
+                <div class="story create-story">
+                    <div class="story-img-placeholder editable-img sync-pfp"></div>
+                    <div class="add-btn"><i class="fas fa-plus"></i></div>
+                    <p>Create story</p>
+                </div>
+                <div class="story editable-img"></div>
+                <div class="story editable-img"></div>
+            </div>
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                    <div class="post-info">
+                        <span class="post-author">
+                            <span contenteditable="true" class="sync-username">username</span> 
+                            <i class="fas fa-check-circle verified-badge"></i>
+                        </span>
+                        <span class="post-time" contenteditable="true">3h • <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                </div>
+                <img src="" class="post-image editable-img" style="height: 150px;" alt="">
+            </div>
+        </div>
+        <div class="screen">
+            <div class="top-nav">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-search"></i>
+                <i class="fab fa-facebook-messenger"></i>
+            </div>
+            <div class="main-nav">
+                <i class="fas fa-home active-icon"></i>
+                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-store"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                    <div class="post-info">
+                        <span class="post-author">
+                            <span contenteditable="true" class="sync-username">username</span> 
+                            <i class="fas fa-check-circle verified-badge"></i> 
+                            <span class="follow-text text-blue" contenteditable="true">Follow</span>
+                        </span>
+                        <span class="post-time" contenteditable="true">3h • <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <img src="" class="post-image editable-img" style="height: 350px;" alt="">
+                <div class="post-stats">
+                    <span><i class="fas fa-thumbs-up text-blue"></i> <i class="fas fa-heart text-danger"></i> <span contenteditable="true">99K</span></span>
+                    <span contenteditable="true">250 comments • 250 shares • 3.2K views</span>
+                </div>
+                <div class="post-actions">
+                    <button><i class="far fa-thumbs-up"></i> Like</button>
+                    <button><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+             <div class="post-card border-top">
+                <div class="post-header mt-2">
+                    <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                    <div class="post-info">
+                        <span class="post-author"><span contenteditable="true" class="sync-username">username</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="reels-container editable-img">
+                <div class="top-nav transparent-nav">
+                    <div>
+                        <i class="fas fa-home"></i>
+                        <i class="fas fa-video active-icon text-dark"></i>
+                        <i class="fas fa-user-friends"></i>
+                        <i class="fas fa-store"></i>
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="mt-2 text-dark px-3 fw-bold d-flex justify-content-between w-100">
+                        <span contenteditable="true">For you</span>
+                        <span contenteditable="true" style="color: gray;">Explore</span>
+                        <div>
+                            <i class="fas fa-search me-2"></i>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="reels-sidebar">
+                    <div class="action-item"><i class="fas fa-thumbs-up"></i><span contenteditable="true">999K</span></div>
+                    <div class="action-item"><i class="fas fa-comment"></i><span contenteditable="true">1.5M</span></div>
+                    <div class="action-item"><i class="fas fa-share"></i><span contenteditable="true">899</span></div>
+                    <div class="action-item"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+
+                <div class="reels-footer">
+                    <div class="reels-user">
+                        <img src="" class="post-pfp editable-img sync-pfp" alt="">
+                        <span class="fw-bold" contenteditable="true" class="sync-username">username</span>
+                        <i class="fas fa-check-circle verified-badge"></i>
+                        <button class="btn btn-outline-light btn-sm ms-2" contenteditable="true">Follow</button>
+                    </div>
+                    <p class="reels-desc" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="fw-bold">more</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="fb.js"></script>
+</body>
+</html>

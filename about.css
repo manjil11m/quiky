@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1a1d20;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    margin: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+    box-sizing: border-box;
+}
+svg{
+    width: 3vw;
+    height: 3vw;
+    color: #0052cc;
+    cursor: pointer;
+}
+#logo-text{
+    margin: 5vw 0;
+}
+main{
+    margin: 0 5vw;
+    text-align: left;
+}
+h2,h3{
+    color: #00ff66;
+}
+@media(max-width:768px){
+    svg{
+        width: 10vw;
+        height: 10vw;
+    }
+    #logo-text{
+        width: 40vw;
+    }
+}
+@media(min-width:768px){
+    #logo-text{
+        width: 20vw;
+        margin: 0;
+    }
+}
